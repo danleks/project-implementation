@@ -1,0 +1,29 @@
+// Regular font family
+$text-font-stack: 'Roboto', sans-serif !default;
+$logo-font: 'Kurale', serif !default;
+
+// Color map
+
+$colorMap: (
+    $background: (
+        $main: #EEF8F6,
+        $menu-panel: #5E7776,
+        $border: #F9DCB2,
+    ),
+    $textColor: (
+        $link: #BCD1CD,
+        $accent: #27354F,
+        $social: #CBD7EB,
+        $midGrey: #B7BCC5,
+    ),
+
+);
+
+// Container's max-width
+$max-width: 1024px !default;
+
+//BREAKPOINTS
+$breakpoints: (
+    medium: 768px,
+    large: 1024px
+);
