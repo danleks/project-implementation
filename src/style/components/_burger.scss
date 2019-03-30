@@ -1,0 +1,32 @@
+.burger {
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+
+    &__content {
+        @include alignCenter;
+        width: 2.5rem;
+        height: 4px;
+        border-radius: 2px;
+        background-color: colorMap($colorMap, 'background', 'accent');
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+            background-color: inherit;
+        }
+
+        &::before {
+            top: 7px;
+        }
+
+        &::after {
+            bottom: 7px;
+        }
+    }
+}
