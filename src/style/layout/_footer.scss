@@ -90,4 +90,8 @@
         }
         color: colorMap($colorMap, 'textColor', 'social');
     }
+
+    &__link {
+        color: inherit;
+    }
 }

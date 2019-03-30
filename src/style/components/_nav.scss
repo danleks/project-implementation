@@ -14,12 +14,12 @@
         background-color: colorMap($colorMap, 'background', 'menu-panel');
         z-index: $zindex-menu;
 
-        &--active {
-            transform: translateX(0);
-        }
-
         @include respond-to(medium) {
             transform: translateX(180rem);
+        }
+
+        &--active {
+            transform: translateX(0);
         }
 
         @include respond-to(large) {
