@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    &__logo {
+        & > h1 {
+            padding: 1rem 1.5rem;
+            font-size: 2rem;
+            border: 2px solid colorMap($colorMap, 'background', 'accent');
+        }
+    }
+}
