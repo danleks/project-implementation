@@ -1,15 +1,11 @@
 .gallery {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-gap: 2rem;
     padding: 2rem;
 
     &__item {
         position: relative;
         width: 100%;
-
-        &:not(:last-child) {
-            margin-bottom: 2rem;
-        }
     }
 
     &__img {
@@ -26,5 +22,11 @@
             display: inline-block;
             text-align: center;
         }
+    }
+
+    @include respond-to(medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
     }
 }

@@ -5,11 +5,19 @@
     align-items: center;
     font-size: 1.5rem;
 
+    @include respond-to(medium) {
+        font-size: 2.2rem;
+    }
+
     &__address {
         display: flex;
         justify-content: center;
         width: 20rem;
         font-style: normal;
+
+        @include respond-to(medium) {
+            width: 30rem;
+        }
         & > span {
             text-align: center;
             color: colorMap($colorMap, 'general', 'midGrey');
@@ -25,6 +33,10 @@
         display: flex;
         width: 20rem;
         justify-content: center;
+
+        @include respond-to(medium) {
+            width: 30rem;
+        }
     }
 
     &__title {
@@ -45,6 +57,10 @@
     &__socialItem {
         &:not(:last-child) {
             margin-right: 1.5rem;
+
+            @include respond-to(medium) {
+                margin-right: 2.5rem;
+            }
         }
         color: colorMap($colorMap, 'textColor', 'social');
     }

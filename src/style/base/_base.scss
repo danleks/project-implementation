@@ -12,5 +12,6 @@ html {
   .mainWrapper {
     display: grid;
     grid-template-rows: 10vh auto 10vh;
+    justify-content: center;
     background-color: colorMap($colorMap, 'background', 'main');
   }
