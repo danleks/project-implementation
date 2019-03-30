@@ -1,6 +1,6 @@
 @mixin respond-to($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
-        @media (min-width: #{map-get($brekpoints, $breakpoint)}) {
+        @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
             @content;
         }
     }
@@ -9,4 +9,11 @@
         @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
             + "Please make sure it is defined in `$breakpoints` map.";
     }
+}
+
+@mixin alignCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
