@@ -1,10 +1,11 @@
 {
   "name": "project-implementation",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "start": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "deploy": "gh-pages -d dist"
   },
@@ -17,6 +18,7 @@
     "gh-pages": "^2.0.1",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
+    "normalize.css": "^8.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.6.0",
     "sass-loader": "^7.1.0",
