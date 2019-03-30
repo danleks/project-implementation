@@ -35,9 +35,25 @@
         &,
         &:link,
         &:visited {
+            position: relative;
             font-size: 1.8rem;
             color: colorMap($colorMap, 'textColor', 'link');
             text-decoration: none;
+            transition: all .3s;
+        }
+
+        &:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 90%;
+            height: 2px;
+            background-color: colorMap($colorMap, 'background', 'accent');
+        }
+
+        &:hover {
+            color: colorMap($colorMap, 'background', 'accent');
         }
     }
 
