@@ -14,12 +14,22 @@
         background-color: colorMap($colorMap, 'background', 'menu-panel');
         z-index: $zindex-menu;
 
-        @include respond-to(medium) {
-            transform: translateX(80rem);
-        }
-
         &--active {
             transform: translateX(0);
+        }
+
+        @include respond-to(medium) {
+            transform: translateX(180rem);
+        }
+
+        @include respond-to(large) {
+            position: relative;
+            flex-direction: row;
+            justify-content: space-between;
+            height: auto;
+            width: 100%;
+            transform: translateX(0);
+            background: none;
         }
     }
 
@@ -32,6 +42,10 @@
             left: 2rem;
             width: 2rem;
             height: 2rem;
+
+            @include respond-to(large) {
+                display: none;
+            }
         }
     }
 
@@ -44,6 +58,14 @@
             color: colorMap($colorMap, 'textColor', 'link');
             text-decoration: none;
             transition: all .3s;
+
+            @include respond-to(medium) {
+                font-size: 2.8rem;
+            }
+
+            @include respond-to(large) {
+                font-size: 1.5rem;
+            }
         }
 
         &:hover::after {
@@ -65,7 +87,10 @@
         @include alignCenter;
         width: 1.5rem;
         height: 3px;
-        visibility: 0;
+        background-color: transparent;
+        @include respond-to(medium) {
+            width: 2rem;
+        }
         &::before,
         &::after {
             content: '';
@@ -73,6 +98,9 @@
             width: 1.5rem;
             height: 3px;
             background-color: colorMap($colorMap, 'general', 'accent');
+            @include respond-to(medium) {
+                width: 2rem;
+            }
         }
 
         &:before {
@@ -82,6 +110,11 @@
         &:after {
             transform: rotate(-45deg);
         }
+    }
+
+    @include respond-to(large) {
+        width: 80%;
+        padding: 0 2rem;
     }
 
 }

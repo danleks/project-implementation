@@ -17,18 +17,19 @@ $colorMap: (
     general: (
         accent: #27354F,
         midGrey: #B7BCC5,
+        _darkGrey: #A8A8A8,
         _white: #ffffff,
     )
 
 );
 
 // Container's max-width
-$max-width: 1024px !default;
+$max-width: 1268px !default;
 
 //BREAKPOINTS
 $breakpoints: (
     medium: 768px,
-    large: 1024px
+    large: 1268px
 );
 
 //global z-indexes:

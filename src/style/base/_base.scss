@@ -9,9 +9,24 @@ html {
     margin: 0;
   }
 
+  body {
+    @include respond-to(large) {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
   .mainWrapper {
     display: grid;
     grid-template-rows: 10vh auto 10vh;
     justify-content: center;
+    max-width: $max-width;
     background-color: colorMap($colorMap, 'background', 'main');
+
+    @include respond-to(large) {
+      grid-template-rows: 12% auto 15%;
+      height: 90%;
+    }
   }

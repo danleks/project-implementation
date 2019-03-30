@@ -3,6 +3,22 @@
     grid-gap: 2rem;
     padding: 2rem;
 
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: colorMap($colorMap, 'background', 'main');
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: colorMap($colorMap, 'textColor', 'link');
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: colorMap($colorMap, 'general', 'midGrey');
+    }
+
     &__item {
         position: relative;
         width: 100%;
@@ -25,8 +41,16 @@
     }
 
     @include respond-to(medium) {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2rem;
+    }
+
+    @include respond-to(large) {
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5rem;
+        justify-self: center;
+        padding: 2rem 4rem;
+        overflow: auto;
     }
 }
