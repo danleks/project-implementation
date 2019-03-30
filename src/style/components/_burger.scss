@@ -9,7 +9,7 @@
         width: 2.5rem;
         height: 4px;
         border-radius: 2px;
-        background-color: colorMap($colorMap, 'background', 'accent');
+        background-color: colorMap($colorMap, 'general', 'accent');
 
         &::before,
         &::after {

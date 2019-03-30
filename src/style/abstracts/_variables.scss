@@ -9,13 +9,16 @@ $colorMap: (
         main: #EEF8F6,
         menu-panel: #5E7776,
         border: #F9DCB2,
-        accent: #27354F,
     ),
     textColor: (
         link: #BCD1CD,
         social: #CBD7EB,
-        midGrey: #B7BCC5,
     ),
+    general: (
+        accent: #27354F,
+        midGrey: #B7BCC5,
+        _white: #ffffff,
+    )
 
 );
 
@@ -27,3 +30,7 @@ $breakpoints: (
     medium: 768px,
     large: 1024px
 );
+
+//global z-indexes:
+
+$zindex-menu: 100;

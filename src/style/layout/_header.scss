@@ -6,7 +6,8 @@
 
     &__title {
         padding: 1rem 1.5rem;
-        font-size: 2rem;
         border: 2px solid colorMap($colorMap, 'background', 'accent');
+        font-family: $logo-font;
+        font-size: 2rem;
     }
 }

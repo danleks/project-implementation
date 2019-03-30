@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: $text-font-stack;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -8,6 +9,8 @@ html {
     margin: 0;
   }
 
-  body {
+  .mainWrapper {
+    display: grid;
+    grid-template-rows: 10vh auto 10vh;
     background-color: colorMap($colorMap, 'background', 'main');
   }

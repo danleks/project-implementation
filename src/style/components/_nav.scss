@@ -12,6 +12,7 @@
         transform: translateX(40rem);
         transition: all .3s;
         background-color: colorMap($colorMap, 'background', 'menu-panel');
+        z-index: $zindex-menu;
 
 
         &--active {
@@ -49,11 +50,11 @@
             left: 0;
             width: 90%;
             height: 2px;
-            background-color: colorMap($colorMap, 'background', 'accent');
+            background-color: colorMap($colorMap, 'general', 'accent');
         }
 
         &:hover {
-            color: colorMap($colorMap, 'background', 'accent');
+            color: colorMap($colorMap, 'general', 'accent');
         }
     }
 
@@ -68,7 +69,7 @@
             position: absolute;
             width: 1.5rem;
             height: 3px;
-            background-color: colorMap($colorMap, 'background', 'accent');
+            background-color: colorMap($colorMap, 'general', 'accent');
         }
 
         &:before {
