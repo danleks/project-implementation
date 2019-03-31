@@ -499,6 +499,7 @@ html {
           transform: translateX(40rem);
   transition: all .3s;
   background-color: #5E7776;
+  overflow: auto;
   z-index: 100; }
   @media (min-width: 768px) {
     .nav__list {
