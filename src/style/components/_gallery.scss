@@ -1,7 +1,9 @@
 .gallery {
     display: grid;
+    grid-auto-rows: 1fr;
     grid-gap: 2rem;
     padding: 2rem;
+    overflow: auto;
 
     &::-webkit-scrollbar {
         width: 5px;
@@ -22,11 +24,43 @@
     &__item {
         position: relative;
         width: 100%;
+        overflow: hidden;
     }
 
     &__item:nth-child(2) {
+        border: 6px solid colorMap($colorMap, 'background', 'border');
         & > img {
-            border: 6px solid colorMap($colorMap, 'background', 'border');
+            position: absolute;
+            top: 30%;
+            left: -13%;
+            transform: scale(2);
+        }
+    }
+
+    &__item:nth-child(3) {
+        & > img {
+            position: absolute;
+            top: 26%;
+            left: -13%;
+            transform: scale(1.6);
+        }
+    }
+
+    &__item:nth-child(4) {
+        & > img {
+            position: absolute;
+            top: 20%;
+            left: 4%;
+            transform: scale(1.5);
+        }
+    }
+
+    &__item:nth-child(5) {
+        & > img {
+            position: absolute;
+            top: 9%;
+            left: 4%;
+            transform: scale(1.2);
         }
     }
 
@@ -37,12 +71,15 @@
 
     &__caption {
         @include alignCenter;
+        width: 100%;
         font-size: 3.6rem;
         font-weight: bold;
+        line-height: 2;
         color: colorMap($colorMap, 'general', '_white');
 
         span {
             display: inline-block;
+            width: 100%;
             text-align: center;
         }
     }
@@ -58,7 +95,6 @@
         grid-auto-rows: max-content;
         grid-gap: 5rem;
         justify-self: center;
-        padding: 2rem 4rem;
-        overflow: auto;
+        padding: 2rem 4rem 5rem 4rem;
     }
 }

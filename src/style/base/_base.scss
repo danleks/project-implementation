@@ -26,7 +26,7 @@ html {
     background-color: colorMap($colorMap, 'background', 'main');
 
     @include respond-to(large) {
-      grid-template-rows: 12% auto 15%;
+      grid-template-rows: 10rem auto 6rem;
       height: 90%;
     }
   }
