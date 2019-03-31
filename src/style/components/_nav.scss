@@ -12,6 +12,7 @@
         transform: translateX(40rem);
         transition: all .3s;
         background-color: colorMap($colorMap, 'background', 'menu-panel');
+        overflow: auto;
         z-index: $zindex-menu;
 
         @include respond-to(medium) {
