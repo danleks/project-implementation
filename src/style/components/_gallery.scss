@@ -77,7 +77,7 @@
         line-height: 2;
         color: colorMap($colorMap, 'general', '_white');
 
-        span {
+        & > span {
             display: inline-block;
             width: 100%;
             text-align: center;
