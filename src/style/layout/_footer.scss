@@ -79,6 +79,7 @@
     }
 
     &__socialItem {
+        color: colorMap($colorMap, 'textColor', 'social');
         cursor: pointer;
 
         &:not(:last-child) {
@@ -88,10 +89,16 @@
                 margin-right: 2.5rem;
             }
         }
-        color: colorMap($colorMap, 'textColor', 'social');
+
     }
 
     &__link {
         color: inherit;
+        transition: color .3s;
+
+
+        &:hover {
+            color: colorMap($colorMap, 'textColor', 'socialDark');
+        }
     }
 }
