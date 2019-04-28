@@ -1,4 +1,4 @@
-PRACA DOMOWA No. 2 (+RWD)
+Responsive layout
 
 ## Links:
 * [GH-PAGES](https://danleks.github.io/project-implementation/)
